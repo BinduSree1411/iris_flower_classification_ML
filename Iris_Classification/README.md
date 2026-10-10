@@ -222,3 +222,8 @@ The project provides practical experience with Python, machine learning workflow
 **Application Framework:** Streamlit
 
 **Repository:** https://github.com/BinduSree1411/iris_flower_classification_ML.git
+
+## 🚀 Live Demo
+Try the application here: [Iris Flower Classification](https://iris-ml-classifier-bindusree.streamlit.app/)
+
+

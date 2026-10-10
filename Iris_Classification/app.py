@@ -79,10 +79,6 @@ st.markdown("""
 
 # Load trained models and scaler
 @st.cache_resource
-from pathlib import Path
-import pickle
-import streamlit as st
-
 BASE_DIR = Path(__file__).resolve().parent
 
 def load_models():

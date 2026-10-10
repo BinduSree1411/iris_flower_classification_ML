@@ -79,15 +79,20 @@ st.markdown("""
 
 # Load trained models and scaler
 @st.cache_resource
+from pathlib import Path
+import pickle
+import streamlit as st
+
+BASE_DIR = Path(__file__).resolve().parent
+
 def load_models():
-    with open("all_models.pkl", "rb") as file:
+    with open(BASE_DIR / "all_models.pkl", "rb") as file:
         models = pickle.load(file)
 
-    with open("scaler.pkl", "rb") as file:
+    with open(BASE_DIR / "scaler.pkl", "rb") as file:
         scaler = pickle.load(file)
 
     return models, scaler
-
 
 try:
     models, scaler = load_models()

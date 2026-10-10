@@ -1,7 +1,7 @@
 
-import streamlit as st
-import pickle
 from pathlib import Path
+import pickle
+import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 from datetime import datetime
@@ -88,11 +88,13 @@ def load_models():
 
     return models, scaler
 
+
 try:
     models, scaler = load_models()
 except Exception as error:
     st.error(f"Could not load the trained models: {error}")
     st.stop()
+
 # ADD THE NEW CODE HERE
 from pathlib import Path
 
